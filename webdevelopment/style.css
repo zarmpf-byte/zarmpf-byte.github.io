@@ -7,3 +7,15 @@ p {
   color: #00FF00;
   font-size: 24px;
 }
+
+.resume-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    border: 2px solid #000000;
+    background-color: #00FF00;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
