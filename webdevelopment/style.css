@@ -19,3 +19,15 @@ p {
     border-radius: 8px;
     font-weight: bold;
 }
+
+.about-list {
+    list-style-type: circle;
+    margin: 20px;
+    padding: 10px;
+}
+
+.about-list li {
+    font-size: 18px;
+    color: #9A9A9A;
+    margin-bottom: 8px;
+}
