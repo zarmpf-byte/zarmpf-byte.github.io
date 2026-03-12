@@ -1,10 +1,10 @@
 h1 {
-  color: #9A9A9A;
+  color: #F1B82D;
   font-size: 42px;
 }
 
 p {
-  color: #00FF00;
+  color: #F1B82D;
   font-size: 24px;
 }
 
@@ -13,7 +13,7 @@ p {
     padding: 10px 20px;
     margin: 15px 0;
     border: 2px solid #000000;
-    background-color: #00FF00;
+    background-color: #F1B82D;
     color: #000000;
     text-decoration: none;
     border-radius: 8px;
@@ -28,6 +28,6 @@ p {
 
 .about-list li {
     font-size: 18px;
-    color: #9A9A9A;
+    color: #F1B82D;
     margin-bottom: 8px;
 }
