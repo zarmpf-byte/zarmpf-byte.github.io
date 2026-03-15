@@ -2,29 +2,36 @@
     Name: Zach Rehagen
     Date: 2/5/2026
     Course: IS-LT 4355
-    Description: Template
+    Description: About Me
 -->
-
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <title>About Me</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="style.css" rel="stylesheet"/>
+        <link href="nav.css" rel="stylesheet"/>
     </head>
-
     <body><!-- Main content will go here -->
         <header>
-            <h1>About Me</h1>
+            <img alt="Your Site Logo" src="logo.png"/>
+            <nav>
+                <ul>
+                <li><a href="a.html">Home</a></li>
+                <li><a href="b.html">About Me</a></li>
+                <li><a href="c.html">Experience &Goals</a></li>
+                <li><a href="d.html">Education</a></li>
+                <li><a href="e.html">Contact Me</a></li>
+                </ul>
+            </nav>
         </header>
-
-    <main>
-        <section id="bio" aria-labelledby="bio-heading">
+        <main>
+            <section aria-labelledby="bio-heading" id="bio">
             <h2 id="bio-heading">Bio</h2>
-
-            <article>
-                <p>
+                <article>
+                    <p>
                     I’m an Information Technology student at the University of Missouri–Columbia with a strong
                     background in electronics, industrial controls, and hands-on technical support. I bring years
                     of real-world experience as a Maintenance Electrician and Electronics Technician, working
@@ -34,26 +41,25 @@
                     advanced computer and sensor systems in high-pressure environments. I’m motivated by
                     problem-solving and continuous learning and look forward to applying my knowledge and
                     skills to the right place.
-                </p>
-            </article>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>AC/DC Circuit Analysis and Troubleshooting</li>
-                <li>Programmable Logic Controllers (PLCs)</li>
-                <li>CNC Systems Operation and Maintenance</li>
-                <li>Robotics Systems Support</li>
-                <li>Computer Systems Installation and Troubleshooting</li>
-                <li>Technical Documentation and Reporting</li>
-                <li>Team Collaboration and Communication</li>
-            </ul>
-        </section>
-        <a href="Rehagenresume.pdf" class="resume-link">Download My Resume</a>
-    </main>
-
+                    </p>
+                </article>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                    <ul>
+                    <li>AC/DC Circuit Analysis and Troubleshooting</li>
+                    <li>Programmable Logic Controllers (PLCs)</li>
+                    <li>CNC Systems Operation and Maintenance</li>
+                    <li>Robotics Systems Support</li>
+                    <li>Computer Systems Installation and Troubleshooting</li>
+                    <li>Technical Documentation and Reporting</li>
+                    <li>Team Collaboration and Communication</li>
+                    </ul>
+            </section>
+        <a class="resume-link" href="Rehagenresume.pdf">Download My Resume</a>
+        </main>
         <footer>
-        Zach Rehagen 2/15/2026
+        Zach Rehagen 3/15/2026
         </footer>
     </body>
 </html>
