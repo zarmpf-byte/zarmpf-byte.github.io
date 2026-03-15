@@ -1,6 +1,13 @@
-h1 {
+h1{
   color: #F1B82D;
   font-size: 42px;
+  text-align: center;
+}
+  
+h2 {
+  color: #F1B82D;
+  font-size: 36px;
+  text-align: center;
 }
 
 p {
@@ -30,4 +37,29 @@ p {
     font-size: 18px;
     color: #F1B82D;
     margin-bottom: 8px;
+}
+
+.reflection-paragraph:first-of-type::first-letter {
+    font-size: 2.2;
+    font-weight: bold;
+    color: #F1B82D;
+}
+
+.reflection-paragraph:nth-of-type(even) {
+    text-indent: 2em;
+}
+
+.reflection-box {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border: 2px solid #B8B8B8;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #F4F4F4;
+    font-family: Arial, sans-serif;
 }
