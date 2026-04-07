@@ -13,6 +13,100 @@
         <title>About Me</title>
         <link href="style.css" rel="stylesheet"/>
         <link href="nav.css" rel="stylesheet"/>
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            background-color: #d9d9d9;
+            font-family: Arial, sans-serif;
+            color: #f2b233;
+            }
+
+            .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            }
+
+            h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #e3a728;
+            }
+
+            .contact-box {
+            background-color: #000;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+            }
+
+            form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            }
+
+            label {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #f2b233;
+            }
+
+            input,
+            select,
+            textarea {
+            width: 100%;
+            padding: 14px;
+            font-size: 1rem;
+            border: 2px solid #f2b233;
+            border-radius: 8px;
+            background-color: #111;
+            color: #fff;
+            box-sizing: border-box;
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+            color: #c9b27a;
+            }
+
+            textarea {
+            resize: vertical;
+            min-height: 140px;
+            }
+
+            .submit-btn {
+            background-color: #f2b233;
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 14px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            }
+
+            .submit-btn:hover {
+            background-color: #d89d22;
+            }
+
+            .success-message {
+            display: none;
+            margin-top: 15px;
+            color: #4CAF50;
+            font-weight: bold;
+            text-align: center;
+            }
+
+            @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            }
+        </style>
     </head>
     <body><!-- Main content will go here -->
         <header>
@@ -31,54 +125,74 @@
             </nav>
         </header>
         <main>
-            <h2>Contact Me</h2>
+  <div class="container">
+    <h1>Contact Me</h1>
 
-            <form>
+    <div class="contact-box">
+      <form id="contactForm">
 
-                <label for="title">Title</label>
-                <select id="title" name="title" required>
-                    <option value="" disabled selected>Select your title</option>
-                    <option value="mr">Mr.</option>
-                    <option value="ms">Ms.</option>
-                    <option value="mrs">Mrs.</option>
-                    <option value="dr">Dr.</option>
-                </select>
+        <label for="title">Title</label>
+        <select id="title" required>
+          <option value="" disabled selected>Select your title</option>
+          <option>Mr.</option>
+          <option>Ms.</option>
+          <option>Mrs.</option>
+          <option>Dr.</option>
+        </select>
 
-                <label for="fullname">Full Name</label>
-                <input 
-                    type="text" 
-                    id="fullname" 
-                    name="fullname" 
-                    placeholder="Enter your full name" 
-                    required>
+        <label for="name">Full Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          placeholder="Enter your full name" 
+          required
+        />
 
-                <label for="email">Email Address</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="Enter your email address" 
-                    required>
+        <label for="email">Email Address</label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="Enter your email address" 
+          required
+        />
 
-                <label for="message">Message</label>
-                <textarea 
-                    id="message" 
-                    name="message" 
-                    placeholder="Enter your message" 
-                    rows="5" 
-                    required></textarea>
+        <label for="contact-method">Preferred Contact Method</label>
+        <select id="contact-method" required>
+          <option value="" disabled selected>Select a method</option>
+          <option>Email</option>
+          <option>Phone</option>
+          <option>Text Message</option>
+        </select>
 
-                <label for="contact-method">Preferred Contact Method</label>
-                <select id="contact-method" name="contact-method" required>
-                    <option value="" disabled selected>Select a method</option>
-                    <option value="email">Email</option>
-                    <option value="phone">Phone</option>
-                    <option value="text">Text Message</option>
-                </select>
+        <label for="message">Message</label>
+        <textarea 
+          id="message" 
+          placeholder="Enter your message" 
+          required
+        ></textarea>
 
-                <button type="submit">Submit</button>
+        <button type="submit" class="submit-btn">Send Message</button>
 
-</form>
+        <div class="success-message" id="successMessage">
+          ✅ Your message has been submitted!
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+        <script>
+            const form = document.getElementById("contactForm");
+            const successMessage = document.getElementById("successMessage");
+
+            form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            successMessage.style.display = "block";
+
+            form.reset();
+            });
+        </script>
         </main>
         <footer>
         Zach Rehagen 3/15/2026
