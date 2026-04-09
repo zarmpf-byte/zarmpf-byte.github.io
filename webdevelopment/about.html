@@ -1,68 +1,112 @@
 <!--
     Name: Zach Rehagen
-    Date: 2/5/2026
+    Date: 4/9/2026
     Course: IS-LT 4355
     Description: About Me
 -->
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <title>About Me</title>
-        <link href="style.css" rel="stylesheet"/>
-        <link href="nav.css" rel="stylesheet"/>
-    </head>
-    <body><!-- Main content will go here -->
-        <header>
-            <img alt="Your Site Logo" src="logo.png"/>
-            <nav>
-                <div class="dropdown">
-                    <button class="dropbtn">Menu ▾</button>
-                    <ul class="dropdown-content">
-                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/index.html">Home</a></li>
-                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/about.html">About Me</a></li>
-                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/reflection.html">Experience & Goals</a></li>
-                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/education.html">Education</a></li>
-                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/contact.html">Contact Me</a></li>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About Me</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="nav.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <img alt="Zach Rehagen site logo" src="logo.png"/>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Menu ▾</button>
+                <ul class="dropdown-content">
+                    <li><a href="https://zarmpf-byte.github.io/webdevelopment/index.html">Home</a></li>
+                    <li><a href="https://zarmpf-byte.github.io/webdevelopment/about.html">About Me</a></li>
+                    <li><a href="https://zarmpf-byte.github.io/webdevelopment/reflection.html">Experience & Goals</a></li>
+                    <li><a href="https://zarmpf-byte.github.io/webdevelopment/education.html">Education</a></li>
+                    <li><a href="https://zarmpf-byte.github.io/webdevelopment/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-page">
+        <h1>About Me</h1>
+
+        <section class="hero-grid" aria-label="About me introduction">
+            <div class="profile-card">
+                <img alt="Portrait of Zach Rehagen" class="profile-image" src="logo.png"/>
+            </div>
+
+            <div class="intro-stack">
+                <section class="name-panel">
+                    <h2>Zach Rehagen</h2>
+                </section>
+
+                <section class="card values-card" aria-labelledby="values-heading">
+                    <h3 id="values-heading">Core Values</h3>
+                    <ul class="values-list">
+                        <li><strong>Innovation</strong> &bull; Always learning and experimenting with new ideas.</li>
+                        <li><strong>Quality</strong> &bull; Writing reliable, maintainable code.</li>
+                        <li><strong>Collaboration</strong> &bull; Enjoy working with others to complete tasks.</li>
+                        <li><strong>Ownership</strong> &bull; Taking responsibility from idea to execution.</li>
                     </ul>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section aria-labelledby="bio-heading" id="bio">
-            <h2 id="bio-heading">Bio</h2>
-                <article>
-                    <p>
-                    I’m an Information Technology student at the University of Missouri–Columbia with a strong
-                    background in electronics, industrial controls, and hands-on technical support. I bring years
-                    of real-world experience as a Maintenance Electrician and Electronics Technician, working
-                    with AC/DC circuits, PLCs, CNC systems, robotics, and computer systems installation and
-                    troubleshooting. Prior to my civilian career, I served as an Artillery Sensor Support Marine,
-                    where I developed strong analytical skills, technical discipline, and experience operating
-                    advanced computer and sensor systems in high-pressure environments. I’m motivated by
-                    problem-solving and continuous learning and look forward to applying my knowledge and
-                    skills to the right place.
-                    </p>
-                </article>
-            </section>
-            <section>
-                <h2>Skills</h2>
-                    <ul>
-                    <li>AC/DC Circuit Analysis and Troubleshooting</li>
-                    <li>Programmable Logic Controllers (PLCs)</li>
-                    <li>CNC Systems Operation and Maintenance</li>
-                    <li>Robotics Systems Support</li>
-                    <li>Computer Systems Installation and Troubleshooting</li>
-                    <li>Technical Documentation and Reporting</li>
-                    <li>Team Collaboration and Communication</li>
-                    </ul>
-            </section>
-        <a class="resume-link" href="Rehagenresume.pdf">Download My Resume</a>
-        </main>
-        <footer>
-        Zach Rehagen 3/15/2026
-        </footer>
-    </body>
+                </section>
+            </div>
+        </section>
+
+        <section class="card story-card" aria-labelledby="story-heading">
+            <h2 id="story-heading">My Story</h2>
+            <p>
+                My name is Zach Rehagen, I'm a Marine Corps veteran and I work as a maintenance electrician in a local
+                factory. I enjoy solving problems and keeping systems running, which is what originally sparked my interest
+                in technology and software development. I'm currently working toward expanding my skills so I can
+                transition into a more software-focused role.
+            </p>
+            <p>
+                Outside of work, I spend a lot of time working on our family farm, which has taught me the value of hard
+                work, responsibility, and hands-on problem solving. I also enjoy spending time with my wife, our two kids,
+                and our two dogs. In my free time, I like hunting and gaming with friends, which gives me a good balance
+                between time outdoors and time to relax and connect with others.
+            </p>
+        </section>
+
+        <section class="card skills-card" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Technical Skills</h2>
+            <div class="skills-grid">
+                <section class="skill-box">
+                    <h3>Frontend</h3>
+                    <p>HTML &bull; CSS &bull; JavaScript &bull; MudBlazor</p>
+                </section>
+                <section class="skill-box">
+                    <h3>Backend</h3>
+                    <p>Node.js &bull; APIs &bull; SQL</p>
+                </section>
+                <section class="skill-box">
+                    <h3>Tools &amp; Platforms</h3>
+                    <p>Git &bull; GitHub &bull; Docker</p>
+                </section>
+                <section class="skill-box">
+                    <h3>Other</h3>
+                    <p>Agile &bull; Testing &bull; Documentation</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="card media-card" aria-labelledby="media-heading">
+            <h2 id="media-heading">Featured Video</h2>
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="about-video.mp4" type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="media-note">Replace <strong>logo.png</strong> and <strong>about-video.mp4</strong> with your own image and video files when ready.</p>
+        </section>
+    </main>
+
+    <footer>
+        Zach Rehagen | 4/9/2026
+    </footer>
+</body>
 </html>
