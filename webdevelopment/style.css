@@ -64,8 +64,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
 .profile-img {
-  width: 200px;
+  width: 100%;
+  max-width: 350px;
   height: auto;
-  display: block;
 }
