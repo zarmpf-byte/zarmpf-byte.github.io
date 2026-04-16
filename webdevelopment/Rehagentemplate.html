@@ -19,9 +19,9 @@
         <header>
             <img src="logo.png" alt="Your Site Logo">
 
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
 
-            <nav>
+            <nav id="mobileNav">
                 <ul class="navbar">
                 <li><a href="https://zarmpf-byte.github.io/webdevelopment/index.html">Home</a></li>
                 <li><a href="https://zarmpf-byte.github.io/webdevelopment/about.html">About Me</a></li>
@@ -35,17 +35,11 @@
         <footer>
 
         </footer>
-        <script>
+            <script>
             function toggleMenu() {
-                const nav = document.getElementById("mobileNav");
-                if (nav.style.display === "block") {
-                    nav.style.display = "none";
-                } 
-                else {
-                    nav.style.display = "block";
-                }
+                document.getElementById("mobileNav").classList.toggle("show");
             }
-</script>
+            </script>
     </body>
 
 </html>
