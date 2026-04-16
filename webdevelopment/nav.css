@@ -4,6 +4,7 @@ header {
     justify-content: space-between;
     background-color: #000000;
     padding: 10px 30px;
+    position: relative;
 }
 
 header img {
@@ -50,54 +51,27 @@ nav {
         padding: 10px 15px;
     }
 
-    nav {
-        display: none;
-    }
-
     .hamburger {
         display: block;
     }
-}
 
-.dropbtn {
-  background-color: #333;
-  color: white;
-  padding: 14px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+    nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        background-color: #000000;
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 1000;
+    }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #444;
-  min-width: 160px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.dropdown-content li a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content li a:hover {
-  background-color: #666;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #555;
+    .navbar li a {
+        display: block;
+    }
 }
