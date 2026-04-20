@@ -1,0 +1,203 @@
+<!--
+    Name: Zach Rehagen
+    Date: 4/20/2026
+    Course: IS-LT 4355
+    Description: Project Highlights Page
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Highlights</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" alt="Zach Rehagen site logo">
+
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+
+            <nav id="mobileNav">
+                <ul class="navbar">
+                <li><a href="https://zarmpf-byte.github.io/webdevelopment/index.html">Home</a></li>
+                <li><a href="https://zarmpf-byte.github.io/webdevelopment/about.html">About Me</a></li>
+                <li class="dropdown">
+                    <a href="https://zarmpf-byte.github.io/webdevelopment/project.html">Project Highlights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#it-support">IT Support</a></li>
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#web-development">Web Development</a></li>
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#automation">Automation</a></li>
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#continuous-learning">Continuous Learning</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://zarmpf-byte.github.io/webdevelopment/reflection.html">Experience &amp; Goals</a></li>
+                <li><a href="https://zarmpf-byte.github.io/webdevelopment/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="project-page">
+            <section class="project-hero" aria-labelledby="project-heading">
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfolio Snapshot</p>
+                    <h1 id="project-heading">Project Highlights</h1>
+                    <p>
+                        This portfolio page showcases four areas that reflect my background. Each section has a short
+                        overview with an artifact that represents practical skills and technical thinking.
+                    </p>
+                </div>
+            </section>
+
+            <section id="it-support" class="project-section" aria-labelledby="it-support-heading">
+                <article class="project-card">
+                    <div class="project-copy">
+                        <p class="section-label">Competency 01</p>
+                        <h2 id="it-support-heading">IT Support & Troubleshooting</h2>
+                        <p>
+                            I have developed strong troubleshooting habits through technical work that requires careful
+                            diagnosis, system reliability, and clear communication. I like finding the root cause of a
+                            problem, testing a solution, and making sure the issue corrected and is less likely to happen again.
+                        </p>
+                        <p>
+                            This competency fits IT support because it combines technical reasoning with patience,
+                            documentation, and the ability to keep systems and users moving forward.
+                        </p>
+                    </div>
+
+                    <figure class="artifact-box dashboard-artifact">
+                        <div class="artifact-header">
+                            <span class="artifact-title">Support Workflow Artifact</span>
+                            <span class="artifact-badge">Process View</span>
+                        </div>
+                        <div class="support-steps" aria-hidden="true">
+                            <div class="step-card">
+                                <span class="step-number">1</span>
+                                <p>Identify the issue</p>
+                            </div>
+                            <div class="step-card">
+                                <span class="step-number">2</span>
+                                <p>Test likely causes</p>
+                            </div>
+                            <div class="step-card">
+                                <span class="step-number">3</span>
+                                <p>Apply and verify fix</p>
+                            </div>
+                        </div>
+                        <figcaption>
+                            This support workflow display represents the structured way I approach technical
+                            troubleshooting, from diagnosis to verification.
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section id="web-development" class="project-section" aria-labelledby="web-development-heading">
+                <article class="project-card reverse-layout">
+                    <figure class="artifact-box artifact-text browser-mockup">
+                        <div class="browser-top" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <figcaption>
+                            This browser-style code represents the semantic HTML and responsive CSS
+                            techniques I am building through coursework and hands-on page design.
+                        </figcaption>
+                    </figure>
+
+                    <div class="project-copy">
+                        <p class="section-label">Competency 02</p>
+                        <h2 id="web-development-heading">Web Development</h2>
+                        <p>
+                            Through my coursework, I have been learning how to build pages with semantic HTML, style
+                            them with CSS, and create layouts that adapt to different screen sizes. This project page
+                            reflects that progress by using sections, figures, anchor links, and responsive design.
+                        </p>
+                        <p>
+                            I want to continue improving my frontend skills so I can create websites that feel clear,
+                            polished, and user-friendly.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section id="automation" class="project-section" aria-labelledby="automation-heading">
+                <article class="project-card">
+                    <div class="project-copy">
+                        <p class="section-label">Competency 03</p>
+                        <h2 id="automation-heading">Industrial Automation &amp; Controls</h2>
+                        <p>
+                            My experience with industrial systems has given me a practical understanding of control
+                            equipment, diagnostics, and machine reliability. Working around technical systems has
+                            strengthened my ability to think logically and respond quickly in high-impact environments.
+                        </p>
+                        <p>
+                            This background helps me connect hands-on systems knowledge with broader IT and operational
+                            technology goals.
+                        </p>
+                    </div>
+
+                    <figure class="artifact-box artifact-text quote-artifact">
+                        <div class="artifact-header">
+                            <span class="artifact-title">Professional Reflection</span>
+                            <span class="artifact-badge">Experience</span>
+                        </div>
+                        <blockquote>
+                            “Hands-on troubleshooting in industrial environments taught me to stay calm, isolate the
+                            problem, and restore reliability.”
+                        </blockquote>
+                        <figcaption>
+                            This reflection statement highlights the mindset I bring from industrial work into
+                            technical support and systems-focused roles.
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section id="continuous-learning" class="project-section" aria-labelledby="continuous-learning-heading">
+                <article class="project-card reverse-layout">
+                    <figure class="artifact-box learning-artifact">
+                        <div class="artifact-header">
+                            <span class="artifact-title">Career Growth</span>
+                            <span class="artifact-badge">Resume</span>
+                        </div>
+                        <div class="resume-preview" aria-hidden="true">
+                            <div class="resume-line short"></div>
+                            <div class="resume-line"></div>
+                            <div class="resume-line"></div>
+                            <div class="resume-line short"></div>
+                        </div>
+                        <a class="resume-link" href="Rehagenresume.pdf" target="_blank">View My Resume (PDF)</a>
+                        <figcaption>
+                            My resume documents the education, technical experience, and career growth that
+                            support my long-term commitment to learning.
+                        </figcaption>
+                    </figure>
+
+                    <div class="project-copy">
+                        <p class="section-label">Competency 04</p>
+                        <h2 id="continuous-learning-heading">Continuous Learning</h2>
+                        <p>
+                            One of my biggest strengths is a willingness to keep learning. My degree work in
+                            Information Technology, combined with technical career experience, reflects an ongoing
+                            commitment to growth.
+                        </p>
+                        <p>
+                            I am focused on building a career where I can keep learning new tools, improve my web and IT
+                            skills, and contribute to systems that people depend on every day.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            Zach Rehagen | 4/20/2026
+        </footer>
+        <script>
+            function toggleMenu() {
+                document.getElementById("mobileNav").classList.toggle("show");
+            }
+        </script>
+    </body>
+</html>
