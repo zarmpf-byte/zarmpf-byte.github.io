@@ -1,11 +1,10 @@
 <!--
     Name: Zach Rehagen
-    Date: 3/1/2026
+    Date: 4/20/2026
     Course: IS-LT 4355
     Description: Index
 -->
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
@@ -16,51 +15,115 @@
     </head>
     <body>
         <header>
-            <img src="logo.png" alt="Zach Rehagen site logo">
-
+            <img alt="Your Site Logo" src="logo.png"/>
             <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-
             <nav id="mobileNav">
                 <ul class="navbar">
                 <li><a href="https://zarmpf-byte.github.io/webdevelopment/index.html">Home</a></li>
                 <li><a href="https://zarmpf-byte.github.io/webdevelopment/about.html">About Me</a></li>
-                <li class="dropdown"><a href="https://zarmpf-byte.github.io/webdevelopment/project.html">Project Highlights</a></li>
-                <li><a href="https://zarmpf-byte.github.io/webdevelopment/reflection.html">Experience & Goals</a></li>
+                <li class="dropdown">
+                    <a href="https://zarmpf-byte.github.io/webdevelopment/project.html">Project Highlights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#it-support">IT Support</a></li>
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#web-development">Web Development</a></li>
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#automation">Automation</a></li>
+                        <li><a href="https://zarmpf-byte.github.io/webdevelopment/project.html#continuous-learning">Continuous Learning</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://zarmpf-byte.github.io/webdevelopment/reflection.html">Experience &amp; Goals</a></li>
                 <li><a href="https://zarmpf-byte.github.io/webdevelopment/contact.html">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section aria-labelledby="bio-heading" id="bio">
-                <h2 id="bio-heading">Welcome!</h2>
-                <article>
+        <main class="home-page">
+            <section class="page-hero" aria-labelledby="home-heading">
+                <span class="hero-eyebrow">Portfolio Home</span>
+                <div class="two-column-layout">
+                    <div>
+                        <h1 id="home-heading">Welcome!</h1>
+                        <p>
+                            I’m Zach Rehagen, and this portfolio is designed to show who I am, what I have learned,
+                            and the kind of technical work I want to keep building. My background combines military
+                            service, industrial troubleshooting, and current IT coursework.
+                        </p>
+                        <p>
+                            I am a motivated learner who wants to apply new web, IT, and problem-solving skills in a
+                            professional environment while continuing to grow with every project.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="project.html">View Project Highlights</a>
+                            <a class="primary-button" href="contact.html">Contact Me</a>
+                        </div>
+                    </div>
+                    <figure class="artifact-box">
+                        <img src="logo.png" alt="Zach Rehagen portfolio logo"/>
+                        <figcaption>
+                            Artifact: My personal site logo represents the portfolio brand used across every page.
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="highlight-grid" aria-label="Home page highlights">
+                <article class="info-bubble">
+                    <h2>Problem Solver</h2>
                     <p>
-                    I’m Zach Rehagen and I am the one you are looking for. This website will help you
-                    find out a little bit about me and what I can do.
-                    <br/>
-                    I am a very motivated learner with a strong interest in professional development. My goals
-                    are to find a place that will let me apply my recently learned skills and to continuously
-                    challenge me to better hone my skills, while also making progress towards the company’s
-                    common goal.
+                        I enjoy breaking down technical problems, identifying the cause, and finding practical solutions
+                        that improve reliability.
                     </p>
-                    <br/>
+                </article>
+                <article class="info-bubble">
+                    <h2>Continuous Learner</h2>
                     <p>
-                    Favorite Quote:
-                    <br/>
-                    <blockquote>
-                        "Being ready is not what matters. What matters is winning after you get there." <a href="https://en.wikipedia.org/wiki/Victor_H._Krulak">Lieutenant  General Victor H. Krulak, USMC, April 1965.</a>
-                    </blockquote>
+                        My IT coursework and hands-on work experience both reflect a strong commitment to developing new
+                        technical skills over time.
+                    </p>
+                </article>
+                <article class="info-bubble">
+                    <h2>Career Focus</h2>
+                    <p>
+                        My goal is to move into a technology role where I can blend support, troubleshooting, and web or
+                        systems-based work.
                     </p>
                 </article>
             </section>
+
+            <section class="panel-card" aria-labelledby="quote-heading">
+                <h2 id="quote-heading">Personal Motivation</h2>
+                <div class="info-bubble">
+                    <p>Favorite Quote:</p>
+                    <blockquote>
+                        "Being ready is not what matters. What matters is winning after you get there."
+                        <a href="https://en.wikipedia.org/wiki/Victor_H._Krulak">Lieutenant General Victor H. Krulak, USMC, April 1965.</a>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="quick-links-grid" aria-labelledby="explore-heading">
+                <article class="quick-link-card">
+                    <h2 id="explore-heading">About Me</h2>
+                    <p>Learn more about my background, values, and technical strengths.</p>
+                    <a class="primary-button" href="about.html">Explore About Page</a>
+                </article>
+                <article class="quick-link-card">
+                    <h2>Experience &amp; Goals</h2>
+                    <p>Read about the experience that shaped my career direction and long-term goals.</p>
+                    <a class="primary-button" href="reflection.html">Read Reflection</a>
+                </article>
+                <article class="quick-link-card">
+                    <h2>Resume</h2>
+                    <p>Open my resume to review education, work experience, and technical qualifications.</p>
+                    <a class="primary-button" href="Rehagenresume.pdf" target="_blank">Open Resume</a>
+                </article>
+            </section>
         </main>
-    <footer>
-        Zach Rehagen 3/15/2026
-    </footer>
-                <script>
+        <footer>
+            Zach Rehagen 4/20/2026
+        </footer>
+        <script>
             function toggleMenu() {
                 document.getElementById("mobileNav").classList.toggle("show");
             }
-            </script>
-</body>
+        </script>
+    </body>
 </html>
