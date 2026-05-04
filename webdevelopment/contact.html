@@ -112,7 +112,8 @@
         <header>
             <img src="logo.png" alt="Zach Rehagen site logo">
 
-            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger" aria-label="Open navigation menu">&#9776;</label>
 
             <nav id="mobileNav">
                 <ul class="navbar">
@@ -180,19 +181,6 @@
       </form>
     </div>
   </div>
-
-        <script>
-            const form = document.getElementById("contactForm");
-            const successMessage = document.getElementById("successMessage");
-
-            form.addEventListener("submit", function(e) {
-            e.preventDefault();
-
-            successMessage.style.display = "block";
-
-            form.reset();
-            });
-        </script>
         </main>
         <footer>
             Zach Rehagen | 4/20/2026

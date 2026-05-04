@@ -65,8 +65,8 @@ nav {
         z-index: 1000;
     }
 
-    nav.show {
-        display: block;
+    .menu-toggle:checked ~ nav {
+    display: block;
     }
 
     .navbar {
