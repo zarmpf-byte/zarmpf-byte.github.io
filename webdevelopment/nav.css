@@ -49,9 +49,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        padding: 10px 15px;
-    }
 
     .hamburger {
         display: block;
@@ -73,11 +70,13 @@ nav {
     }
 
     .navbar {
+        display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
     .navbar li a {
         display: block;
+        color: white;
     }
 }
